@@ -2,11 +2,11 @@
 
 ---
 
-# Conf Boilerplate
+# Conf Boilerplate Ruby
 
 ---
 
-Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles que querem organizar conferências/eventos e não tem muito tempo para criar o site disso.
+O projeto tem como objetivo ajudar aqueles que querem organizar conferências/eventos e não tem muito tempo para criar o site disso.
 
 * [Como funciona?](#como-funciona)
 * [Estrutura](#estrutura)
@@ -18,7 +18,7 @@ Uma iniciativa da [BrazilJS Foundation](http://braziljs.org) para ajudar aqueles
 
 ## Como funciona?
 
-Nós usamos o [DocPad](https://github.com/bevry/docpad), um static generator em NodeJS, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](#dom%C3%ADnio-personalizado))*.
+Desenvolvido em [Jekyll](https://github.com/mojombo/jekyll), um static generator em Ruby, para criar esse modelo extremamente simples de customizar. Além disso, a hospedagem é gratuita via [Github Pages](http://pages.github.com) e você ainda pode usar seu próprio domínio *(mais informações sobre isso em [Deploy](#dom%C3%ADnio-personalizado))*.
 
 Por padrão, definimos as seguintes seções:
 
@@ -31,7 +31,7 @@ Por padrão, definimos as seguintes seções:
 
 *OBS 1: Não há integração com nenhum sistema de inscrição e/ou pagamento. Por conta disso, indicamos o [Eventick](http://eventick.com.br/).*
 
-*OBS 2: Por enquanto ainda não conseguimos desenvolver uma solução altamente automatizada e customizável para formulários de contato. Por conta disso, indicamos o [Wufoo](http://wufoo.com/).*
+*OBS 2: Para formulários de contato, indicamos o [Wufoo](http://wufoo.com/).*
 
 ## Estrutura
 
@@ -39,48 +39,66 @@ A estrutura básica do projeto se dá na seguinte forma:
 
 <pre>
 .
-|-- out/
-|-- src/
-|   |-- documents
-|   |-- files
-|   |-- layouts
-|   |-- partials
-|-- docpad.cson
-|-- package.json
-`-- publish.sh
+|-- .rvmrc
+|-- _config.yml
+|-- _includes/
+|   |-- header.html
+|   |-- nav.html
+|   |-- section/
+|-- _layouts/
+|-- _site/
+|-- css/
+|-- Gemfile
+|-- Gemfile.lock
+|-- img/
+|-- js/
+|-- index.html
 </pre>
 
-### out/
+### .rvmrc
 
-É onde os arquivos gerados são armazenados, uma vez que o DocPad tenha sido rodado. Porém, esse diretório se torna desnecessário no versionamento, por isso está ignorado ([.gitignore](https://github.com/braziljs/conf-boilerplate/blob/master/.gitignore)).
+Arquivo .rvmrc com a criação do gemset se necessário.
 
-### [src/documents](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents)
+### _site/
+
+É onde os arquivos gerados são armazenados, uma vez que o Jekyll tenha sido rodado. Porém, esse diretório se torna desnecessário no versionamento, por isso está ignorado ([.gitignore](https://github.com/maurogeorge/conf_boilerplate_ruby/blob/master/.gitignore)).
+
+### [index.html](https://github.com/maurogeorge/conf_boilerplate_ruby/blob/master/index.html)
 
 Contém o arquivo responsável por importar todas as seções da aplicação.
 
-### [src/files](https://github.com/braziljs/conf-boilerplate/tree/master/src/files)
+### [css](https://github.com/maurogeorge/conf_boilerplate_ruby/tree/master/css)
 
-Possui as imagens, arquivos CSS, JS e o [CNAME](https://github.com/braziljs/conf-boilerplate/blob/master/src/files/CNAME) que indica o domínio personalizado que deve ser usado *(mais informações sobre como usar seu domínio próprio em [Deploy](#dom%C3%ADnio-personalizado))*.
+Possui os arquivos de CSS.
 
-### [src/layouts](https://github.com/braziljs/conf-boilerplate/tree/master/src/layouts)
+### [img](https://github.com/maurogeorge/conf_boilerplate_ruby/tree/master/img)
+
+Possui os arquivos de imagens.
+
+### [js](https://github.com/maurogeorge/conf_boilerplate_ruby/tree/master/js)
+
+Possui os arquivos de JavaScript.
+
+### [_layouts](https://github.com/maurogeorge/conf_boilerplate_ruby/tree/master/_layouts)
 
 Contém o template padrão da aplicação.
 
-### [src/partials](https://github.com/braziljs/conf-boilerplate/tree/master/src/partials)
+### [_includes](https://github.com/maurogeorge/conf_boilerplate_ruby/tree/master/_includes)
 
-São blocos de código utilizados para gerar a página principal do site ([index.html](https://github.com/braziljs/conf-boilerplate/blob/master/src/documents/index.html.eco)).
+São blocos de código utilizados para gerar a página principal do site ([index.html](https://github.com/maurogeorge/conf_boilerplate_ruby/blob/master/index.html)).
 
-### [docpad.cson](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.cson)
+### [_config.yml](https://github.com/braziljs/conf-boilerplate/blob/master/docpad.cson)
 
 Armazena de forma fácil a maior parte das configurações da aplicação.
 
-### [package.json](https://github.com/braziljs/conf-boilerplate/blob/master/package.json)
+### [Gemfile](https://github.com/braziljs/conf-boilerplate/blob/master/package.json)
 
-Lista as dependências de módulos do NodeJS.
+Lista as dependências de módulos do Ruby.
 
-### [publish.sh](https://github.com/braziljs/conf-boilerplate/blob/master/publish.sh)
+### [Gemfile.lock](https://github.com/braziljs/conf-boilerplate/blob/master/package.json)
 
-Shell Script responsável pela publicação do site via [Github Pages](http://pages.github.com).
+Arquivo gerado pelo Gemfile.
+
 
 ## Primeiros passos
 
@@ -88,7 +106,7 @@ Shell Script responsável pela publicação do site via [Github Pages](http://pa
 
 2. Abra o terminal e baixe o [DocPad](https://github.com/bevry/docpad) através do comando:
 
-		sudo npm install -fg docpad@6.8
+    sudo npm install -fg docpad@6.8
 
 3. Instale o [DocPad](https://github.com/bevry/docpad):
 
@@ -96,19 +114,19 @@ Shell Script responsável pela publicação do site via [Github Pages](http://pa
 
 4. Agora clone o projeto:
 
-		git clone git@github.com:braziljs/conf-boilerplate.git
+    git clone git@github.com:braziljs/conf-boilerplate.git
 
 5. Depois vá para pasta do projeto:
 
-		cd conf-boilerplate
+    cd conf-boilerplate
 
 6. Instale as dependências:
 
-		sudo npm install .
+    sudo npm install .
 
 7. E finalmente rode:
 
-		docpad run
+    docpad run
 
 Agora você irá ver o site rodando em `localhost:9778` :D
 
@@ -124,13 +142,13 @@ Quer alterar o nome, data, endereço, cidade ou preço do evento? É só mudar.
 
 ```
 conf:
-	name: "Conference name"
-	description: "Conference description"
-	date: "November 15"
-	price: "$100"
-	address: "Boulevard Kukulcan, 30, México"
-	venue: "Coco Bongo"
-	city: "Cancún"
+  name: "Conference name"
+  description: "Conference description"
+  date: "November 15"
+  price: "$100"
+  address: "Boulevard Kukulcan, 30, México"
+  venue: "Coco Bongo"
+  city: "Cancún"
 ```
 
 ### Informações básicas sobre o site
@@ -139,12 +157,12 @@ Quer mudar a imagem de capa, código do Google Analytics ou o favicon? Vá em fr
 
 ```
 site:
-	url: "http://confboilerplate.com"
-	favicon: "http://braziljs.org/favicon.ico"
-	googleanalytics: "UA-33656081-1"
-	images:
-		cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
-		facebook: "http://braziljs.org/img/fb-share.jpg"
+  url: "http://confboilerplate.com"
+  favicon: "http://braziljs.org/favicon.ico"
+  googleanalytics: "UA-33656081-1"
+  images:
+    cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
+    facebook: "http://braziljs.org/img/fb-share.jpg"
 ```
 
 ### Seções ativas
@@ -157,13 +175,13 @@ E por aí vai.
 
 ```
 sections:
-	about: true
-	location: true
-	speakers: true
-	schedule: true
-	sponsors: true
-	partners: true
-	contact: false
+  about: true
+  location: true
+  speakers: true
+  schedule: true
+  sponsors: true
+  partners: true
+  contact: false
 ```
 
 ### Lista de Palestrantes
@@ -172,15 +190,15 @@ Para incluir/alterar/excluir um palestrante também é igualmente simples, basta
 
 ```
 schedule: [
-	name: "Chuck Norris"
-	photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
-	bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-	company: "Delta Command"
-	twitter: "littlechuck"
-	presentation:
-		title: "How to kill a elephant with one finger"
-		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-		time: "13h00"
+  name: "Chuck Norris"
+  photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
+  bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+  company: "Delta Command"
+  twitter: "littlechuck"
+  presentation:
+    title: "How to kill a elephant with one finger"
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+    time: "13h00"
 ]
 ```
 
@@ -192,8 +210,8 @@ Para alterar os horários de check-in, almoço e coffee-break, é só recorrer a
 
 ```
 schedule: [
-	name: "Check-in / Breakfast"
-	time: "9h00"
+  name: "Check-in / Breakfast"
+  time: "9h00"
 ]
 ```
 
@@ -205,9 +223,9 @@ Para adicionar qualquer patrocinador ou apoio no evento, é só recorrer as vari
 
 ```
 partners: [
-	name: "BrazilJS"
-	logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
-	url: "http://braziljs.org"
+  name: "BrazilJS"
+  logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
+  url: "http://braziljs.org"
 ]
 ```
 
@@ -237,16 +255,6 @@ Se você prefere utilizar seu próprio servidor para hospedar o site:
 
 Esse comando irá gerar uma pasta `out` contendo apenas arquivos estáticos, depois é só fazer o upload do conteúdo dessa pasta para sua hospedagem.
 
-## Showcase
+## Inspiração
 
-Confira os eventos que usaram esse projeto como pontapé inicial:
-
-* [FrontInterior](http://frontinterior.com.br)
-
-## Quem está por trás disso?
-
-Nós somos um grupo de desenvolvedores que passaram por muitas dificuldades organizando conferências pelo Brasil e agora queremos ajudar outras pessoas nesse árduo trabalho.
-
-**Líder do Projeto**: [Zeno Rocha](http://github.com/zenorocha)
-
-Agradecimento especial a todos os membros da comunidade pelos feedbacks e contribuições.
+Criado a partir do projeto [Conf Boilerplate](https://github.com/braziljs/conf-boilerplate) que é uma iniciativa da [BrazilJS Foundation](http://braziljs.org).
