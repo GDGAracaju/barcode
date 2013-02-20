@@ -11,9 +11,9 @@ O projeto tem como objetivo ajudar aqueles que querem organizar conferências/ev
 * [Como funciona?](#como-funciona)
 * [Estrutura](#estrutura)
 * [Primeiros passos](#primeiros-passos)
-* [Customização](#customiza%C3%A7%C3%A3o)
+* [Customização](#customizao)
 * [Deploy](#deploy)
-* [Inspiração](#inspira&ccedil;&atilde;o)
+* [Inspiração](#inspirao)
 
 ## Como funciona?
 
