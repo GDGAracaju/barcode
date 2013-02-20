@@ -13,8 +13,7 @@ O projeto tem como objetivo ajudar aqueles que querem organizar conferências/ev
 * [Primeiros passos](#primeiros-passos)
 * [Customização](#customiza%C3%A7%C3%A3o)
 * [Deploy](#deploy)
-* [Showcase](#showcase)
-* [Quem está por trás disso?](#quem-est%C3%A1-por-tr%C3%A1s-disso)
+* [Inspiração](#inspira&ccedil;&atilde;o)
 
 ## Como funciona?
 
