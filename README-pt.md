@@ -38,7 +38,8 @@ A estrutura básica do projeto se dá na seguinte forma:
 
 <pre>
 .
-|-- .rvmrc
+|-- .ruby-version
+|-- .ruby-gemset
 |-- _config.yml
 |-- _includes/
 |   |-- header.html
@@ -54,9 +55,9 @@ A estrutura básica do projeto se dá na seguinte forma:
 |-- js/
 </pre>
 
-### .rvmrc
+### .ruby-version e .ruby-gemset
 
-Arquivo .rvmrc com a criação do gemset se necessário.
+São os arquivos responsáveis pelo gemsite do projeto.
 
 ### _site/
 
