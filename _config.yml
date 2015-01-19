@@ -1,8 +1,6 @@
 # Jekyll
-server: true
-auto: true
 markdown: rdiscount
-pygments: true
+highlighter: "pygments"
 permalink: /:title.html
 
 # Conference info
@@ -24,9 +22,13 @@ site:
     cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
     facebook: "http://braziljs.org/img/fb-share.jpg"
 
+subscribeText: "Register now"
+subscribeURL: "http://www.eventick.com.br/"
+
 # Active sections on the website
 sections:
   about: true
+  c4p: true
   location: true
   speakers: true
   schedule: true
@@ -119,3 +121,64 @@ partners:
     name: "BrazilJS"
     logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
     url: "http://braziljs.org"
+
+# About section
+aboutSection:
+   title: "About"
+
+# Call for papers section
+c4pSection:
+   title: "Call for papers"
+   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+   c4pUrl: "http://call4paperz.com"
+   c4pCaption: "Submit"
+   c4pRulesUrl: "http://call4paperz.com"
+   c4pRulesCaption: "Read the rules."
+
+# Contact section
+contactSection:
+   title: "Contact"
+   text: "Contact us if you have any questions."
+   contacts:
+   -
+     title: "Email"
+     link: "mailto:your_email@domain"
+   -
+     title: "Facebook"
+     link: "https://www.facebook.com/yourpage"
+   email: "your_email@domain"
+   twitterURL: "http://twitter.com/your_twitter"
+   twitterUsername: "@your_twitter"
+   showForm: false
+   form:
+    action: "contato.php"
+    name: "What's your name?"
+    email: "What's your email?"
+    message: "Write a message"
+    sendButton: "Send"
+
+# Location section
+locationSection:
+   title: "Location"
+
+# Partners section
+partnersSection:
+   title: "Partners"
+   showYourLogoHere: true
+
+# Schedule section
+scheduleSection:
+   title: "Schedule"
+   text: "Lorem ipsum"
+   time: "Time"
+   slot: "Slot"
+   description: "Description"
+
+# Speakers section
+speakersSection:
+   title: "Speakers"
+
+# Sponsors section
+sponsorsSection:
+   title: "Sponsors"
+   showYourLogoHere: true
