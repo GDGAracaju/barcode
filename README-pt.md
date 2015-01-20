@@ -120,7 +120,7 @@ Arquivo gerado pelo Gemfile.
 
 7. E finalmente rode:
 
-    jekyll
+    jekyll server
 
 Agora você irá ver o site rodando em `localhost:4000` :D
 
@@ -242,7 +242,7 @@ Caso você não queira utilizar o domínio do Github, é possível usar seu pró
 
 Se você prefere utilizar seu próprio servidor para hospedar o site:
 
-* Rode `jekyll` na raíz do projeto.
+* Rode `jekyll build` na raíz do projeto.
 
 Esse comando irá gerar uma pasta `_site` contendo apenas arquivos estáticos, depois é só fazer o upload do conteúdo dessa pasta para sua hospedagem.
 
