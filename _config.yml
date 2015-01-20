@@ -169,7 +169,7 @@ partners_section:
 # Schedule section
 schedule_section:
    title: "Schedule"
-   text: "Lorem ipsum"
+   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
    time: "Time"
    slot: "Slot"
    description: "Description"
