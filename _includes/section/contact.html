@@ -2,28 +2,28 @@
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
-    <h2 class="section-title">{{site.contactSection.title}}</h2>
-    <p>{{site.contactSection.text}}</p>
+    <h2 class="section-title">{{site.contact_section.title}}</h2>
+    <p>{{site.contact_section.text}}</p>
     
-    {% for contact in site.contactSection.contacts %}
+    {% for contact in site.contact_section.contacts %}
       <p><a href="{{contact.link}}">{{contact.title}}</a></p>
     {% endfor %} 
     
-    {% if site.contactSection.showForm == true %}
-    <form method="post" action="{{site.contactSection.form.action}}" id="form-contato" class="form-contato">
+    {% if site.contact_section.show_form == true %}
+    <form method="post" action="{{site.contact_section.form.action}}" id="form-contato" class="form-contato">
       <div class="control-group control-group-name">
-        <label for="name">{{site.contactSection.form.name}}</label>
-        <input type="text" name="name" id="name" placeholder="{{site.contactSection.form.name}}" />
+        <label for="name">{{site.contact_section.form.name}}</label>
+        <input type="text" name="name" id="name" placeholder="{{site.contact_section.form.name}}" />
       </div>
       <div class="control-group control-group-email">
-        <label for="email">{{site.contactSection.form.email}}</label>
-      <input type="email" name="email" id="email" placeholder="{{site.contactSection.form.email}}" />
+        <label for="email">{{site.contact_section.form.email}}</label>
+      <input type="email" name="email" id="email" placeholder="{{site.contact_section.form.email}}" />
       </div>
       <div class="control-group">
-        <label for="mensagem">{{site.contactSection.form.message}}</label>
+        <label for="mensagem">{{site.contact_section.form.message}}</label>
       <textarea name="" id="mensagem" cols="30" rows="10" placeholder=""></textarea>
       </div>
-      <input class="btn btn-send" type="submit" value="{{site.contactSection.form.sendButton}}" />
+      <input class="btn btn-send" type="submit" value="{{site.contact_section.form.send_button}}" />
     </form>
     {% endif %}
   </section>

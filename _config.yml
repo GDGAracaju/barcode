@@ -8,7 +8,7 @@ conf:
   name: "Conference name"
   description: "Conference description"
   date: "November 15"
-  price: "$100"
+  price: "Only $100"
   address: "Boulevard Kukulcan, 30, México"
   venue: "Coco Bongo"
   city: "Cancún"
@@ -22,8 +22,8 @@ site:
     cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
     facebook: "http://braziljs.org/img/fb-share.jpg"
 
-subscribeText: "Register now"
-subscribeURL: "http://www.eventick.com.br/"
+subscribe_text: "Register now"
+subscribe_url: "http://www.eventick.com.br/"
 
 # Active sections on the website
 sections:
@@ -123,20 +123,20 @@ partners:
     url: "http://braziljs.org"
 
 # About section
-aboutSection:
+about_section:
    title: "About"
 
 # Call for papers section
-c4pSection:
+c4p_section:
    title: "Call for papers"
    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-   c4pUrl: "http://call4paperz.com"
-   c4pCaption: "Submit"
-   c4pRulesUrl: "http://call4paperz.com"
-   c4pRulesCaption: "Read the rules."
+   c4p_url: "http://call4paperz.com"
+   c4p_caption: "Submit"
+   c4p_rules_url: "http://call4paperz.com"
+   c4p_rules_caption: "Read the rules."
 
 # Contact section
-contactSection:
+contact_section:
    title: "Contact"
    text: "Contact us if you have any questions."
    contacts:
@@ -147,27 +147,27 @@ contactSection:
      title: "Facebook"
      link: "https://www.facebook.com/yourpage"
    email: "your_email@domain"
-   twitterURL: "http://twitter.com/your_twitter"
-   twitterUsername: "@your_twitter"
-   showForm: false
+   twitter_url: "http://twitter.com/your_twitter"
+   twitter_username: "@your_twitter"
+   show_form: false
    form:
     action: "contato.php"
     name: "What's your name?"
     email: "What's your email?"
     message: "Write a message"
-    sendButton: "Send"
+    send_button: "Send"
 
 # Location section
-locationSection:
+location_section:
    title: "Location"
 
 # Partners section
-partnersSection:
+partners_section:
    title: "Partners"
-   showYourLogoHere: true
+   show_your_logo_here: true
 
 # Schedule section
-scheduleSection:
+schedule_section:
    title: "Schedule"
    text: "Lorem ipsum"
    time: "Time"
@@ -175,10 +175,10 @@ scheduleSection:
    description: "Description"
 
 # Speakers section
-speakersSection:
+speakers_section:
    title: "Speakers"
 
 # Sponsors section
-sponsorsSection:
+sponsors_section:
    title: "Sponsors"
-   showYourLogoHere: true
+   show_your_logo_here: true
