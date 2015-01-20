@@ -1,8 +1,6 @@
 # Jekyll
-server: true
-auto: true
 markdown: rdiscount
-pygments: true
+highlighter: "pygments"
 permalink: /:title.html
 
 # Conference info
@@ -10,7 +8,7 @@ conf:
   name: "Conference name"
   description: "Conference description"
   date: "November 15"
-  price: "$100"
+  price: "Only $100"
   address: "Boulevard Kukulcan, 30, México"
   venue: "Coco Bongo"
   city: "Cancún"
@@ -24,9 +22,13 @@ site:
     cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
     facebook: "http://braziljs.org/img/fb-share.jpg"
 
+subscribe_text: "Register now"
+subscribe_url: "http://www.eventick.com.br/"
+
 # Active sections on the website
 sections:
   about: true
+  c4p: true
   location: true
   speakers: true
   schedule: true
@@ -119,3 +121,69 @@ partners:
     name: "BrazilJS"
     logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
     url: "http://braziljs.org"
+
+# About section
+about_section:
+   title: "About"
+   description: 
+    - 
+      p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    - 
+      p: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+# Call for papers section
+c4p_section:
+   title: "Call for papers"
+   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+   c4p_url: "http://call4paperz.com"
+   c4p_caption: "Submit"
+   c4p_rules_url: "http://call4paperz.com"
+   c4p_rules_caption: "Read the rules."
+
+# Contact section
+contact_section:
+   title: "Contact"
+   text: "Contact us if you have any questions."
+   contacts:
+   -
+     title: "Email"
+     link: "mailto:your_email@domain"
+   -
+     title: "Facebook"
+     link: "https://www.facebook.com/yourpage"
+   email: "your_email@domain"
+   twitter_url: "http://twitter.com/your_twitter"
+   twitter_username: "@your_twitter"
+   show_form: false
+   form:
+    action: "contato.php"
+    name: "What's your name?"
+    email: "What's your email?"
+    message: "Write a message"
+    send_button: "Send"
+
+# Location section
+location_section:
+   title: "Location"
+
+# Partners section
+partners_section:
+   title: "Partners"
+   show_your_logo_here: true
+
+# Schedule section
+schedule_section:
+   title: "Schedule"
+   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+   time: "Time"
+   slot: "Slot"
+   description: "Description"
+
+# Speakers section
+speakers_section:
+   title: "Speakers"
+
+# Sponsors section
+sponsors_section:
+   title: "Sponsors"
+   show_your_logo_here: true
