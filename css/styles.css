@@ -292,3 +292,6 @@ html, body {
 .block {
   display: block;
 }
+.margin-last {
+  margin-bottom: 40px;
+}
