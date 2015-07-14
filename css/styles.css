@@ -278,3 +278,6 @@ html, body {
   height: 105px;
   border-radius: 50%;
 }
+#map-canvas {
+  height: 350px;
+}

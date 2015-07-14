@@ -31,17 +31,6 @@
 			rel="stylesheet">
 		<link rel="stylesheet" href="css/material.min.css">
 		<link rel="stylesheet" href="css/styles.css">
-		<style>
-		#view-source {
-			position: fixed;
-			display: block;
-			right: 0;
-			bottom: 0;
-			margin-right: 40px;
-			margin-bottom: 40px;
-			z-index: 900;
-		}
-		</style>
 	</head>
 	<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
 		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -54,20 +43,20 @@
 				<div class="mdl-layout--large-screen-only mdl-layout__header-row">
 				</div>
 				<div class="mdl-layout--large-screen-only mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-					<a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+					<a href="#overview" class="mdl-layout__tab is-active">Home</a>
 					<!-- <a href="#features" class="mdl-layout__tab">Features</a>
 					<a href="#features" class="mdl-layout__tab">Details</a>
 					<a href="#features" class="mdl-layout__tab">Technology</a>
 					<a href="#features" class="mdl-layout__tab">FAQ</a> -->
-					<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+					<!-- <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
 						<i class="material-icons">add</i>
-					</button>
+					</button> -->
 				</div>
 			</header>
 			<div class="mdl-layout__drawer">
 				<span class="mdl-layout-title">Barcode</span>
 				<nav class="mdl-navigation">
-					<a href="#overview" class="mdl-navigation__link">Overview</a>
+					<a href="#overview" class="mdl-navigation__link">Home</a>
 					<!-- <a href="#features" class="mdl-navigation__link">Features</a>
 					<a href="#features" class="mdl-navigation__link">Details</a>
 					<a href="#features" class="mdl-navigation__link">Technology</a>
@@ -99,6 +88,29 @@
 
 					<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
 						<div class="mdl-card mdl-cell mdl-cell--12-col">
+							<div class="mdl-card__supporting-text">
+								<h4>Local</h4>
+								{% if site.conf.address != '' %}
+							      <p>{{ site.conf.address }}</p>
+							      <div id="map-canvas" class="location-area" data-address="{{ site.conf.address }}"></div>
+							    {% endif %}
+							</div>
+							<!-- <div class="mdl-card__actions">
+								<a href="#" class="mdl-button">Read our features</a>
+							</div> -->
+						</div>
+						<!-- <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn3">
+							<i class="material-icons">more_vert</i>
+						</button>
+						<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn3">
+							<li class="mdl-menu__item">Lorem</li>
+							<li class="mdl-menu__item" disabled>Ipsum</li>
+							<li class="mdl-menu__item">Dolor</li>
+						</ul> -->
+					</section>
+
+					<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+						<div class="mdl-card mdl-cell mdl-cell--12-col">
 							<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
 								<h4 class="mdl-cell mdl-cell--12-col">Palestrantes</h4>
 								<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
@@ -107,7 +119,7 @@
 								<div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
 									<h4 class="project-title">Ruby para Javeiros</h4>
 									<h5 class="panelist-title">Thiago Guimarães <small>Jaya Apps - Peão</small></h5>
-									Formado em técnico pelo IFS, quinto período em Sistemas de Informação na UNIT, trabalho programação a 6 anos passando pelas linguagens PHP, Java, C# e Ruby, além de desenvolvimento frontend HTML, CSS e JS. Hoje sou colaborador da Jaya Apps, empresa de SP que presta consultoria para empresas. Trabalhamos com a linguagem Ruby, Java e o framework Ruby on Rails, utilizando banco de dados MySQL, PostgreSQL e MongoDB. Já trabalhei para 3 empresas de Aracaju/SE, uma de Cleveland/OH (USA) e hoje trabalho para uma de São Paulo/SP.
+									<p>Formado em técnico pelo IFS, quinto período em Sistemas de Informação na UNIT, trabalho programação a 6 anos passando pelas linguagens PHP, Java, C# e Ruby, além de desenvolvimento frontend HTML, CSS e JS. Hoje sou colaborador da Jaya Apps, empresa de SP que presta consultoria para empresas. Trabalhamos com a linguagem Ruby, Java e o framework Ruby on Rails, utilizando banco de dados MySQL, PostgreSQL e MongoDB. Já trabalhei para 3 empresas de Aracaju/SE, uma de Cleveland/OH (USA) e hoje trabalho para uma de São Paulo/SP.</p>
 								</div>
 								<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
 									<img src="img/diego-melo.jpg" alt="Thiago Guimarães" class="section__circle-container__circle">
@@ -115,7 +127,7 @@
 								<div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
 									<h4 class="project-title">Usando pre-processadores no desenvolvimento front-end</h4>
 									<h5 class="panelist-title">Diego Melo <small>Desenvolvedor - Unit</small></h5>
-									Entusiasta em Linux desde os 14 anos, desenvolvedor a mais de 3 anos, gamer casual, UI e UX entusiasta e sempre buscando novas maneiras de melhorar e otimizar a forma de desenvolvimento dos projetos.
+									<p>Entusiasta em Linux desde os 14 anos, desenvolvedor a mais de 3 anos, gamer casual, UI e UX entusiasta e sempre buscando novas maneiras de melhorar e otimizar a forma de desenvolvimento dos projetos.</p>
 								</div>
 							</div>
 							<!-- <div class="mdl-card__actions">
@@ -179,30 +191,7 @@
 						</ul> -->
 					</section>
 
-					<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-						<header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
-							<i class="material-icons">play_circle_filled</i>
-						</header>
-						<div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-							<div class="mdl-card__supporting-text">
-								<h4>Features</h4>
-								Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
-							</div>
-							<div class="mdl-card__actions">
-								<a href="#" class="mdl-button">Read our features</a>
-							</div>
-						</div>
-						<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
-							<i class="material-icons">more_vert</i>
-						</button>
-						<ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
-							<li class="mdl-menu__item">Lorem</li>
-							<li class="mdl-menu__item" disabled>Ipsum</li>
-							<li class="mdl-menu__item">Dolor</li>
-						</ul>
-					</section>
-
-					<section class="section--footer mdl-color--white mdl-grid">
+					<!-- <section class="section--footer mdl-color--white mdl-grid">
 						<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
 							<div class="section__circle-container__circle mdl-color--accent section__circle--big"></div>
 						</div>
@@ -217,7 +206,7 @@
 							<h5>Lorem ipsum dolor sit amet</h5>
 							Qui sint ut et qui nisi cupidatat. Reprehenderit nostrud proident officia exercitation anim et pariatur ex.
 						</div>
-					</section>
+					</section> -->
 				</div>
 
 				<!-- <div class="mdl-layout__tab-panel" id="features">
@@ -276,7 +265,7 @@
 					</section>
 				</div> -->
 				<footer class="mdl-mega-footer">
-					<div class="mdl-mega-footer--middle-section">
+					<!-- <div class="mdl-mega-footer--middle-section">
 						<div class="mdl-mega-footer--drop-down-section">
 							<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
 							<h1 class="mdl-mega-footer--heading">Features</h1>
@@ -316,21 +305,23 @@
 								<li><a href="#">Contact us</a></li>
 							</ul>
 						</div>
-					</div>
+					</div> -->
 					<div class="mdl-mega-footer--bottom-section">
 						<div class="mdl-logo">
 							More Information
 						</div>
 						<ul class="mdl-mega-footer--link-list">
-							<li><a href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
-							<li><a href="#">Help</a></li>
-							<li><a href="#">Privacy and Terms</a></li>
+							<li><a href="https://developers.google.com/web/starter-kit/">GDG Aracaju</a></li>
+							<!-- <li><a href="#">Help</a></li>
+							<li><a href="#">Privacy and Terms</a></li> -->
 						</ul>
 					</div>
 				</footer>
 			</main>
 		</div>
-		<a href="https://github.com/google/material-design-lite/blob/master/templates/text-only/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+		<script src="js/jquery.js"></script>
 		<script src="js/material.min.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script src="js/map.js"></script>
 	</body>
 </html>
