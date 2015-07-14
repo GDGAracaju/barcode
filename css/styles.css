@@ -259,3 +259,22 @@ html, body {
 .full-width {
   width: 100%;
 }
+.mdl-layout__header {
+  background-color: #EECA40 !important;
+}
+.mdl-layout__tab-bar {
+  background-color: #C0A332 !important;
+}
+.project-title {
+  margin-bottom: 0 !important;
+}
+.panelist-title small {
+  font-size: 1em;
+  color: #ff4081;
+  opacity: 1;
+}
+.mdl-demo section .section__circle-container > .section__circle-container__circle {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+}
