@@ -302,3 +302,28 @@ html, body {
     height: inherit;
   }
 }
+.demo-card-wide.mdl-card {
+  /*width: 512px;*/
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 276px;
+}
+.demo-card-wide > .mdl-card__title.diego-melo {
+  background: url('/img/logo-sass.png') center #000000;
+}
+.demo-card-wide > .mdl-card__title.thiago-guimaraes {
+  background: url('/img/logo-ruby.png') center no-repeat #278FC5;
+}
+.demo-card-wide > .mdl-card__title.barcode {
+  background: url('/img/barcode.png') center no-repeat #EECA40;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.mdl-demo.mdl-demo .mdl-card__supporting-text h4.card-title {
+  margin-bottom: 0;
+}
+.min-height {
+  min-height: 476px;
+}
