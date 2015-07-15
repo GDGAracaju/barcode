@@ -168,23 +168,26 @@
 				</div>
 			</header>
 			<div class="mdl-layout__drawer">
-				<span class="mdl-layout-title">Barcode</span>
+				<span class="mdl-layout-title">{{ site.conf.name }}</span>
 				<nav class="mdl-navigation">
-					<a href="#overview" class="mdl-navigation__link">Home</a>
+					<a href="#about" class="mdl-navigation__link">{{ site.about_section.title }}</a>
+					<a href="#speakers" class="mdl-navigation__link">{{ site.speakers_section.title }}</a>
 					<!-- <a href="#features" class="mdl-navigation__link">Features</a>
 					<a href="#features" class="mdl-navigation__link">Details</a>
 					<a href="#features" class="mdl-navigation__link">Technology</a>
 					<a href="#features" class="mdl-navigation__link">FAQ</a> -->
 				</nav>
 			</div>
+
 			<main class="mdl-layout__content">
-				<div class="mdl-layout__tab-panel is-active" id="overview">
+				<div class="mdl-layout__tab-panel is-active" id="about">
 					<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
 						<div class="mdl-card mdl-cell mdl-cell--12-col">
 							<div class="mdl-card__supporting-text">
-								<h4>Sobre</h4>
-								<p itemprop="description">Barcode é um evento criado para que profissionais da área de TI possam ficar longe do teclado por um tempo, beber cerveja, assistir palestras curtas e, claro, trocar aquele bom papo nerd. Quer falar sobre Android, iOS, Ruby, Python, Javascript, Node, Go, C#, PHP, Java, Scala, Scrum, Design etc? Venha para o evento, pegue uma cerveja (ou café se você for mocinha) e mãos na massa!</p>
-								<p>O evento acontece nas <strong>terceiras quintas-feiras de todo mês</strong> e faz parte do calendário do <a href="http://www.cajuvalley.com.br/">Caju Valley</a>. Não deixe de conferir nossa página no facebook.</p>
+								<h4>{{ site.about_section.title }}</h4>
+								{% for p in site.about_section.description %}
+									<p itemprop="description">{{ p.p }}</p>
+								{% endfor %}
 							</div>
 						</div>
 					</section>
@@ -192,116 +195,77 @@
 					<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
 						<div class="mdl-card mdl-cell mdl-cell--12-col">
 							<div class="mdl-card__supporting-text">
-								<h4>Local</h4>
-							      <p>Av Ivo do Prado, 734 - São José</p>
-							      <div id="map-canvas" class="location-area" data-address="Av Ivo do Prado, 734 - São José"></div>
+								<h4>{{ site.location_section.title }}</h4>
+							      <p>{{ site.conf.address }}</p>
+							      <div id="map-canvas" class="location-area" data-address="{{ site.conf.address }}"></div>
 							</div>
 						</div>
 					</section>
 
-					<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+					<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="speakers">
 						<div class="mdl-card mdl-cell mdl-cell--12-col">
 							<div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-								<h4 class="mdl-cell mdl-cell--12-col">Palestrantes</h4>
-								<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--12-col-phone">
-									<img src="img/thiago-guimaraes.jpg" alt="Thiago Guimarães" class="section__circle-container__circle">
-								</div>
-								<div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-									<h4 class="project-title">Ruby para Javeiros</h4>
-									<h5 class="panelist-title">Thiago Guimarães <small>Jaya Apps - Peão</small></h5>
-									<a href="https://github.com/thiagogsr" title="Github" target="_blank" class="fa-stack fa-lg">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-									</a>
-									<a href="https://www.facebook.com/thiagogsr" title="Facebook" target="_blank" class="fa-stack fa-lg">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-									</a>
-									<a href="https://twitter.com/thiagogsr" title="Twitter" target="_blank" class="fa-stack fa-lg">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-									</a>
+								<h4 class="mdl-cell mdl-cell--12-col">{{ site.speakers_section.title }}</h4>
 
-									<p>Formado em técnico pelo IFS, quinto período em Sistemas de Informação na UNIT, trabalho programação a 6 anos passando pelas linguagens PHP, Java, C# e Ruby, além de desenvolvimento frontend HTML, CSS e JS. Hoje sou colaborador da Jaya Apps, empresa de SP que presta consultoria para empresas. Trabalhamos com a linguagem Ruby, Java e o framework Ruby on Rails, utilizando banco de dados MySQL, PostgreSQL e MongoDB. Já trabalhei para 3 empresas de Aracaju/SE, uma de Cleveland/OH (USA) e hoje trabalho para uma de São Paulo/SP.</p>
-								</div>
-								<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--12-col-phone">
-									<img src="img/diego-melo.jpg" alt="Thiago Guimarães" class="section__circle-container__circle">
-								</div>
-								<div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-									<h4 class="project-title">Usando pre-processadores no desenvolvimento front-end</h4>
-									<h5 class="panelist-title">Diego Melo <small>Desenvolvedor - Unit</small></h5>
-									<a href="https://github.com/diegomelo182" title="Github" target="_blank" class="fa-stack fa-lg">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-github fa-stack-1x fa-inverse"></i>
-									</a>
-									<a href="https://www.facebook.com/diego.melo.370" title="Facebook" target="_blank" class="fa-stack fa-lg">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-									</a>
-									<a href="https://www.linkedin.com/profile/view?id=206308788&trk=nav_responsive_tab_profile" title="Linkedin" target="_blank" class="fa-stack fa-lg">
-										<i class="fa fa-circle fa-stack-2x"></i>
-										<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-									</a>
-									
-									<p>Entusiasta em Linux desde os 14 anos, desenvolvedor a mais de 3 anos, gamer casual, UI e UX entusiasta e sempre buscando novas maneiras de melhorar e otimizar a forma de desenvolvimento dos projetos.</p>
-								</div>
+								{% for speaker in site.schedule %}
+									{% if speaker.presentation %}
+										<div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--12-col-phone">
+											<img src="{{ speaker.photo }}" alt="{{ speaker.name }} " class="section__circle-container__circle">
+										</div>
+										<div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+											<h4 class="project-title">{{ speaker.presentation.title }}</h4>
+											<h5 class="panelist-title">{{ speaker.name }} <small>{{ speaker.company }}</small></h5>
+											{% for social in speaker.socials %}
+												<a href="https://{{ social.service }}.com/{{ social.handler }}" title="{{ social.service }}" target="_blank" class="fa-stack fa-lg">
+													<i class="fa fa-circle fa-stack-2x"></i>
+													<i class="fa fa-{{ social.service }} fa-stack-1x fa-inverse"></i>
+												</a>
+											{% endfor %}
+											<p>{{ speaker.bio }}</p>
+										</div>
+									{% endif %}
+								{% endfor %}
 							</div>
 						</div>
 					</section>
-					<!-- <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp margin-last">
+					<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp margin-last" id="schedule">
 						<div class="mdl-card mdl-cell mdl-cell--12-col">
 							<div class="mdl-card__supporting-text">
-								<h4>Agenda Barcode #3 - 31/07</h4>
+								<h4>{{ site.schedule_section.title }}</h4>
+								<p>{{site.schedule_section.text}}</p>
 								<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp full-width">
 									<thead>
 										<tr>
-											<th class="mdl-data-table__cell--non-numeric">Time</th>
-											<th class="mdl-data-table__cell--non-numeric">Slot</th>
-											<th class="mdl-data-table__cell--non-numeric">Description</th>
+											<th class="mdl-data-table__cell--non-numeric">{{site.schedule_section.time}}</th>
+											<th class="mdl-data-table__cell--non-numeric">{{site.schedule_section.slot}}</th>
+											<th class="mdl-data-table__cell--non-numeric">{{site.schedule_section.description}}</th>
 										</tr>
 									</thead>
 									<tbody>
-										<tr>
-											<td class="mdl-data-table__cell--non-numeric">
-												16h
-											</td>
-											<td class="mdl-data-table__cell--non-numeric">Chegada da galera sóbria</td>
-											<td class="mdl-data-table__cell--non-numeric">
-												-
-											</td>
-										</tr>
-										<tr>
-											<td class="mdl-data-table__cell--non-numeric">
-												17h
-											</td>
-											<td class="mdl-data-table__cell--non-numeric">
-												<img src="img/thiago-guimaraes.jpg" alt="Thiago Guimarães" height="60" class="thumb-panelist">
-												<strong>Ruby para Javeiros</strong>
-												<span class="block">Jaya Apps - Peão</span>
-											</td>
-											<td class="mdl-data-table__cell--non-numeric">
-												Vamos comparar código Java com código Ruby? Leve um lenço :)
-											</td>
-										</tr>
-										<tr>
-											<td class="mdl-data-table__cell--non-numeric">
-												18h30
-											</td>
-											<td class="mdl-data-table__cell--non-numeric">
-												
-												<strong>Usando pre-processadores no desenvolvimento front-end</strong>
-												<span>Desenvolvedor - Unit</span>
-											</td>
-											<td class="mdl-data-table__cell--non-numeric">
-												Como fazer uma aplicação web de forma otimizada e simplificada para dispositivos mobile e PCs com Sass.
-											</td>
-										</tr>
-
+							  {% for slot in site.schedule %}
+					            {% if slot.presentation %}
+					              <tr>
+					                <td class="mdl-data-table__cell--non-numeric">{{ slot.presentation.time }}</td>
+					                <td class="mdl-data-table__cell--non-numeric">
+														<img class="thumb-panelist" height="60" src="{{ slot.photo }}" alt="{{ slot.name }}" />
+														<strong>{{ slot.presentation.title }}</strong>
+													 <span class="block">{{ slot.company }}</span>
+					                <td class="mdl-data-table__cell--non-numeric">{{ slot.presentation.description }}</td>
+					              </tr>
+					            {% else %}
+					              <tr>
+					                <td class="mdl-data-table__cell--non-numeric">{{ slot.time }}</td>
+					                <td class="mdl-data-table__cell--non-numeric">{{ slot.name }}</td>
+					                <td class="mdl-data-table__cell--non-numeric">-</td>
+					              </tr>
+					            {% endif %}
+					          {% endfor %}
 									</tbody>
 								</table>
 							</div>
 						</div>
-					</section> -->
+					</section>
+
 					<section class="section--center mdl-grid mdl-grid--no-spacing margin-last">
 						<h4>Agenda Barcode #5 - 31/07</h4>
 						<!-- Wide card with share menu button -->
@@ -388,9 +352,8 @@
 							More Information
 						</div>
 						<ul class="mdl-mega-footer--link-list">
-							<li><a href="https://developers.google.com/web/starter-kit/">GDG Aracaju</a></li>
-							<!-- <li><a href="#">Help</a></li>
-							<li><a href="#">Privacy and Terms</a></li> -->
+							<li><a href="http://site.gdgaracaju.com.br/">GDG Aracaju</a></li>
+							<li><a href="http://hdoria.me/">Barcode criado por Hugo Dória</a></li>
 						</ul>
 					</div>
 				</footer>

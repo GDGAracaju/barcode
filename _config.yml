@@ -5,25 +5,25 @@ permalink: /:title.html
 
 # Conference info
 conf:
-  name: "Conference name"
-  description: "Conference description"
-  date: "November 15"
-  price: "Only $100"
-  address: "Boulevard Kukulcan, 30, México"
-  venue: "Coco Bongo"
-  city: "Cancún"
+  name: "Barcode"
+  description: "Barcode é um evento criado para que profissionais da área de TI possam ficar longe do teclado por um tempo, beber cerveja, assistir palestras curtas e, claro, trocar aquele bom papo nerd."
+  date: "31 de julho"
+  price: "Free"
+  address: "Av. Ivo do Prado, 734 - São José"
+  venue: "Estado da Arte Café"
+  city: "Aracaju"
 
 # Site info
 site:
-  url: "http://confboilerplate.com"
-  favicon: "http://braziljs.org/favicon.ico"
+  url: "http://barcode.gdgaracaju.com.br"
+  favicon: "http://site.gdgaracaju.com.br/favicon.png"
   googleanalytics: "UA-33656081-1"
   images:
     cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
     facebook: "http://braziljs.org/img/fb-share.jpg"
 
-subscribe_text: "Register now"
-subscribe_url: "http://www.eventick.com.br/"
+subscribe_text: "Inscreva-se"
+subscribe_url: "https://plus.google.com/events/cu0u99msvd8e05sus6gefipe078"
 
 # Active sections on the website
 sections:
@@ -39,97 +39,66 @@ sections:
 # The entire schedule
 schedule:
   -
-    name: "Check-in / Breakfast"
-    time: "9h00"
+    name: "Chegada sóbria :)"
+    time: "17h00"
   -
-    name: "Linus Torvalds"
-    photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
-    bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-    company: "Linux Foundation"
-    twitter: "linus"
+    name: "Thiago Guimarães"
+    photo: "img/thiago-guimaraes.jpg"
+    bio: "Formado em técnico pelo IFS, quinto período em Sistemas de Informação na UNIT, trabalho programação a 6 anos passando pelas linguagens PHP, Java, C# e Ruby, além de desenvolvimento frontend HTML, CSS e JS. Hoje sou colaborador da Jaya Apps, empresa de SP que presta consultoria para empresas. Trabalhamos com a linguagem Ruby, Java e o framework Ruby on Rails, utilizando banco de dados MySQL, PostgreSQL e MongoDB. Já trabalhei para 3 empresas de Aracaju/SE, uma de Cleveland/OH (USA) e hoje trabalho para uma de São Paulo/SP."
+    company: "Jaya Apps - Peão"
+    socials:
+      -
+        service: "github"
+        handler: "thiagogsr"
+      -
+        service: "twitter"
+        handler: "thiagogsr"
+      -
+        service: "facebook"
+        handler: "thiagogsr"
     presentation:
-      title: "Digging into a Linux Kernel"
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      time: "10h00"
-  -
-    name: "Bill Gates"
-    photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
-    bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-    company: "Microsoft"
-    twitter: "billy95"
-    presentation:
-      title: "Introducing Windows 12"
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      time: "11h00"
-  -
-    name: "Lunch"
-    time: "12h00"
-  -
-    name: "Chuck Norris"
-    photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
-    bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-    company: "Delta Command"
-    twitter: "littlechuck"
-    presentation:
-      title: "How to kill a elephant with one finger"
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      time: "13h00"
-  -
-    name: "Steve Jobs"
-    photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
-    bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-    company: "Apple, Inc."
-    twitter: "stevie"
-    presentation:
-      title: "Presenting iPad"
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      time: "14h00"
-  -
-    name: "Coffee-break"
-    time: "15h00"
-  -
-    name: "Mark Zuckerberg"
-    photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
-    bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-    company: "Facebook"
-    twitter: "zuck"
-    presentation:
-      title: "Revealing Facebook Secrets"
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-      time: "16h00"
-  -
-    name: "Steve Wozniak"
-    photo: "http://f.cl.ly/items/2A3p1N0C3c0n3N3R1w2B/speaker.jpg"
-    bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
-    company: "Apple, Inc."
-    twitter: "woz"
-    presentation:
-      title: "Why do I prefer Android over iPhone"
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      title: "Ruby para Javeiros"
+      description: "Vamos comparar código Java com código Ruby? Leve um lenço :)"
       time: "17h00"
+  -
+    name: "Diego Melo"
+    photo: "img/diego-melo.jpg"
+    bio: "Entusiasta em Linux desde os 14 anos, desenvolvedor a mais de 3 anos, gamer casual, UI e UX entusiasta e sempre buscando novas maneiras de melhorar e otimizar a forma de desenvolvimento dos projetos."
+    company: "Unit - Desenvolvedor"
+    socials:
+      -
+        service: "github"
+        handler: "diegomelo182"
+      -
+        service: "facebook"
+        handler: "diego.melo.370"
+    presentation:
+      title: "Usando pre-processadores no desenvolvimento front-end"
+      description: "Como fazer uma aplicação web de forma otimizada e simplificada para dispositivos mobile e PCs com Sass."
+      time: "18h30"
 
 # List of Sponsors
 sponsors:
   -
-    name: "Eventick"
+    name: "GDG Aracaju"
     logo: "http://f.cl.ly/items/1U3p0Z0e2w0I1i3z1X22/Image%202012.09.25%203:00:58%20PM.png"
     url: "http://eventick.com.br"
 
 # List of Partners
 partners:
   -
-    name: "BrazilJS"
+    name: "Popcode"
     logo: "http://f.cl.ly/items/2N3i2W0X2f3c2g2Z2N0f/Untitled-1.png"
     url: "http://braziljs.org"
 
 # About section
 about_section:
-   title: "About"
-   description: 
-    - 
-      p: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    - 
-      p: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+   title: "Sobre"
+   description:
+    -
+      p: "Barcode é um evento criado para que profissionais da área de TI possam ficar longe do teclado por um tempo, beber cerveja, assistir palestras curtas e, claro, trocar aquele bom papo nerd."
+    -
+      p: "Quer falar sobre Android, iOS, Ruby, Python, Javascript, Node, Go, C#, PHP, Java, Scala, Scrum, Design etc? Venha para o evento, pegue uma cerveja (ou café, água...) e mãos na massa!"
 
 # Call for papers section
 c4p_section:
@@ -164,26 +133,26 @@ contact_section:
 
 # Location section
 location_section:
-   title: "Location"
+   title: "Local"
 
 # Partners section
 partners_section:
-   title: "Partners"
+   title: "Parceiros"
    show_your_logo_here: true
 
 # Schedule section
 schedule_section:
-   title: "Schedule"
-   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-   time: "Time"
+   title: "Agenda"
+   text: "A agenda pode ser alterada sem aviso prévio."
+   time: "Hora"
    slot: "Slot"
-   description: "Description"
+   description: "Descrição"
 
 # Speakers section
 speakers_section:
-   title: "Speakers"
+   title: "Palestrantes"
 
 # Sponsors section
 sponsors_section:
-   title: "Sponsors"
+   title: "Patrocinadores"
    show_your_logo_here: true
