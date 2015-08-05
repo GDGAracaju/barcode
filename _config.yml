@@ -42,6 +42,22 @@ schedule:
     name: "Chegada sóbria :)"
     time: "18h00"
   -
+    name: "Diego Melo"
+    photo: "img/diego-melo.jpg"
+    bio: "Entusiasta em Linux desde os 14 anos, desenvolvedor a mais de 3 anos, gamer casual, UI e UX entusiasta e sempre buscando novas maneiras de melhorar e otimizar a forma de desenvolvimento dos projetos."
+    company: "Unit - Desenvolvedor"
+    socials:
+      -
+        service: "github"
+        handler: "diegomelo182"
+      -
+        service: "facebook"
+        handler: "diego.melo.370"
+    presentation:
+      title: "Usando pre-processadores no desenvolvimento front-end"
+      description: "Como fazer uma aplicação web de forma otimizada e simplificada para dispositivos mobile e PCs com Sass."
+      time: "18h00"
+  -
     name: "Thiago Guimarães"
     photo: "img/thiago-guimaraes.jpg"
     bio: "Formado em técnico pelo IFS, quinto período em Sistemas de Informação na UNIT, trabalho programação a 6 anos passando pelas linguagens PHP, Java, C# e Ruby, além de desenvolvimento frontend HTML, CSS e JS. Hoje sou colaborador da Jaya Apps, empresa de SP que presta consultoria para empresas. Trabalhamos com a linguagem Ruby, Java e o framework Ruby on Rails, utilizando banco de dados MySQL, PostgreSQL e MongoDB. Já trabalhei para 3 empresas de Aracaju/SE, uma de Cleveland/OH (USA) e hoje trabalho para uma de São Paulo/SP."
@@ -59,22 +75,6 @@ schedule:
     presentation:
       title: "Ruby para Javeiros"
       description: "Vamos comparar código Java com código Ruby? Leve um lenço :)"
-      time: "18h00"
-  -
-    name: "Diego Melo"
-    photo: "img/diego-melo.jpg"
-    bio: "Entusiasta em Linux desde os 14 anos, desenvolvedor a mais de 3 anos, gamer casual, UI e UX entusiasta e sempre buscando novas maneiras de melhorar e otimizar a forma de desenvolvimento dos projetos."
-    company: "Unit - Desenvolvedor"
-    socials:
-      -
-        service: "github"
-        handler: "diegomelo182"
-      -
-        service: "facebook"
-        handler: "diego.melo.370"
-    presentation:
-      title: "Usando pre-processadores no desenvolvimento front-end"
-      description: "Como fazer uma aplicação web de forma otimizada e simplificada para dispositivos mobile e PCs com Sass."
       time: "19h30"
 
 # List of Sponsors
