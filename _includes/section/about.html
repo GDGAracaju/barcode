@@ -1,12 +1,16 @@
 {% if site.sections.about %}
 
   <!-- ABOUT -->
-  <section class="about" id="about">
-    <h2 class="section-title">{{site.about_section.title}}</h2>
-    {% for p in site.about_section.description %}
-    	<p>{{p.p}}</p>
-    {% endfor %}
-  </section>
+    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+            <div class="mdl-card__supporting-text">
+                <h4>{{ site.about_section.title }}</h4>
+                {% for p in site.about_section.description %}
+                    <p itemprop="description">{{ p.p }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
   <!-- / ABOUT -->
 
 {% endif %}

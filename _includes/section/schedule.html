@@ -1,40 +1,51 @@
 {% if site.sections.schedule %}
 
-  <!-- SCHEDULE -->
-  <section class="schedule" id="schedule">
-    <h2 class="section-title">{{site.schedule_section.title}}</h2>
-    <p>{{site.schedule_section.text}}</p>
-    <div class="schedule-tbl">
-      <table>
-        <thead>
-          <tr>
-            <th class="schedule-time">{{site.schedule_section.time}}</th>
-            <th class="schedule-slot">{{site.schedule_section.slot}}</th>
-            <th class="schedule-description">{{site.schedule_section.description}}</th>
-          </tr>
-        </thead>
-        <tbody>
+<section class="section--center mdl-grid mdl-grid--no-spacing margin-last" id="schedule">
+  <h4>{{site.schedule_section.title}}</h4>
 
-          {% for slot in site.schedule %}
-            {% if slot.presentation %}
-              <tr>
-                <td class="schedule-time">{{ slot.presentation.time }}</td>
-                <td class="schedule-slot"><span class="speaker-photo"><img class="photo" src="{{ slot.photo }}" alt="{{ slot.name }}" /></span> {{ slot.presentation.title }} <span class="speakers-company">{{ slot.company }}</span></td>
-                <td class="schedule-description">{{ slot.presentation.description }}</td>
-              </tr>
-            {% else %}
-              <tr class="schedule-other">
-                <td class="schedule-time">{{ slot.time }}</td>
-                <td class="schedule-slot">{{ slot.name }}</td>
-                <td class="schedule-description">-</td>
-              </tr>
-            {% endif %}
-          {% endfor %}
-
-        </tbody>
-      </table>
-    </div>
-  </section>
-  <!-- / SCHEDULE -->
-
+  {% for slot in site.schedule %}
+    {% if slot.presentation %}  
+      <!-- Wide card with share menu button -->
+      <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--12-col-tablet">
+        <div class="mdl-card mdl-shadow--2dp demo-card-wide mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__title">
+            <h2 class="mdl-card__title-text">
+              {{ slot.presentation.time }} - {{ slot.presentation.title }}
+            </h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <img src="{{ slot.photo }}" alt="{{ slot.name }}" height="60" class="thumb-panelist">
+            <h4 class="card-title">{{ slot.name }}</h4>
+            {{ slot.presentation.description }}
+          </div>
+          <div class="mdl-card__menu">
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" onclick='window.open("https://www.facebook.com/sharer/sharer.php?u=barcode.gdgaracaju.com.br&sdk=joey&display=popup&ref=plugin",null,"height=300,width=600,status=yes,toolbar=no,menubar=no,location=no");'>
+              <i class="material-icons">share</i>
+            </button>
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <!-- Wide card with share menu button -->
+      <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-card mdl-shadow--2dp demo-card-wide mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__title barcode">
+            <h2 class="mdl-card__title-text">
+              {{ slot.presentation.time }} - {{ slot.presentation.title }}
+            </h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            {{ slot.presentation.description }}
+          </div>
+          
+          <div class="mdl-card__menu">
+            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" onclick='window.open("https://www.facebook.com/sharer/sharer.php?u=barcode.gdgaracaju.com.br&sdk=joey&display=popup&ref=plugin",null,"height=300,width=600,status=yes,toolbar=no,menubar=no,location=no");'>
+              <i class="material-icons">share</i>
+            </button>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>
 {% endif %}

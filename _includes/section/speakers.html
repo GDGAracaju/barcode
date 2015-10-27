@@ -1,30 +1,31 @@
 {% if site.sections.speakers %}
 
   <!-- SPEAKERS -->
-  <section class="speakers" id="speakers">
+  <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="speakers">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+      <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+        <h4 class="mdl-cell mdl-cell--12-col">{{ site.speakers_section.title }}</h4>
 
-    <h2 class="section-title">{{site.speakers_section.title}}</h2>
-
-    <ul class="speakers-list">
-    {% for speaker in site.schedule %}
-      {% if speaker.presentation %}
-        <li class="speakers-item">
-          <span class="speaker-photo"><img class="photo" src="{{ speaker.photo }}" alt="{{ speaker.name }}" /></span>
-
-          <h3 class="speech-title">
-            {% if speaker.presentation.time %}
-              <span class="speech-time">{{ speaker.presentation.time }}</span>
-            {% endif %}
-              <span> {{ speaker.presentation.title }}</span>
-          </h3>
-
-          <h3 class="speakers-name">{{ speaker.name }} <a href="http://www.twitter.com/{{ speaker.twitter }}" title="Twitter @{{ speaker.twitter }}">@{{ speaker.twitter }}</a></h3>
-          <p class="speakers-bio">{{ speaker.bio }}</p>
-        </li>
-      {% endif %}
-    {% endfor %}
-    </ul>
-
+        {% for speaker in site.schedule %}
+          {% if speaker.presentation %}
+            <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--12-col-phone">
+              <img src="{{ speaker.photo }}" alt="{{ speaker.name }} " class="section__circle-container__circle">
+            </div>
+            <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+              <h4 class="project-title">{{ speaker.presentation.title }}</h4>
+              <h5 class="panelist-title">{{ speaker.name }} <small>{{ speaker.company }}</small></h5>
+              {% for social in speaker.socials %}
+                <a href="https://{{ social.service }}.com/{{ social.handler }}" title="{{ social.service }}" target="_blank" class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-{{ social.service }} fa-stack-1x fa-inverse"></i>
+                </a>
+              {% endfor %}
+              <p>{{ speaker.bio }}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
   </section>
   <!-- / SPEAKERS -->
 

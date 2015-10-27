@@ -7,10 +7,10 @@ permalink: /:title.html
 conf:
   name: "Barcode"
   description: "Barcode é um evento criado para que profissionais da área de TI possam ficar longe do teclado por um tempo, beber cerveja, assistir palestras curtas e, claro, trocar aquele bom papo nerd."
-  date: "31 de julho"
+  date: "13 de novembro"
   price: "Free"
-  address: "Av. Ivo do Prado, 734 - São José"
-  venue: "Estado da Arte Café"
+  address: "Rua Américo Curvelo, 585 - Grageru"
+  venue: "Garage 585"
   city: "Aracaju"
 
 # Site info
@@ -20,10 +20,10 @@ site:
   googleanalytics: "UA-33656081-1"
   images:
     cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
-    facebook: "http://braziljs.org/img/fb-share.jpg"
+    facebook: "http://barcode.gdgaracaju.com.br/img/facebook-thumb.jpg"
 
-subscribe_text: "Inscreva-se"
-subscribe_url: "https://plus.google.com/events/cu0u99msvd8e05sus6gefipe078"
+subscribe_text: "Participe"
+subscribe_url: "https://goo.gl/9nwgho"
 
 # Active sections on the website
 sections:
@@ -31,9 +31,9 @@ sections:
   c4p: true
   location: true
   speakers: true
-  schedule: true
-  sponsors: true
-  partners: true
+  schedule: false
+  sponsors: false
+  partners: false
   contact: false
 
 # The entire schedule
@@ -54,27 +54,21 @@ schedule:
         service: "facebook"
         handler: "diego.melo.370"
     presentation:
-      title: "Usando pre-processadores no desenvolvimento front-end"
-      description: "Como fazer uma aplicação web de forma otimizada e simplificada para dispositivos mobile e PCs com Sass."
+      title: "Ruby on Rails e REST API"
+      description: ""
       time: "18h00"
   -
-    name: "Thiago Guimarães"
-    photo: "img/thiago-guimaraes.jpg"
-    bio: "Formado em técnico pelo IFS, quinto período em Sistemas de Informação na UNIT, trabalho programação a 6 anos passando pelas linguagens PHP, Java, C# e Ruby, além de desenvolvimento frontend HTML, CSS e JS. Hoje sou colaborador da Jaya Apps, empresa de SP que presta consultoria para empresas. Trabalhamos com a linguagem Ruby, Java e o framework Ruby on Rails, utilizando banco de dados MySQL, PostgreSQL e MongoDB. Já trabalhei para 3 empresas de Aracaju/SE, uma de Cleveland/OH (USA) e hoje trabalho para uma de São Paulo/SP."
-    company: "Jaya Apps - Peão"
+    name: "Italo Santos"
+    photo: "img/italo-santos.jpg"
+    bio: ""
+    company: ""
     socials:
       -
-        service: "github"
-        handler: "thiagogsr"
-      -
-        service: "twitter"
-        handler: "thiagogsr"
-      -
         service: "facebook"
-        handler: "thiagogsr"
+        handler: "italosnt"
     presentation:
-      title: "Ruby para Javeiros"
-      description: "Vamos comparar código Java com código Ruby? Leve um lenço :)"
+      title: "AngularJS"
+      description: ""
       time: "19h30"
 
 # List of Sponsors
@@ -96,18 +90,18 @@ about_section:
    title: "Sobre"
    description:
     -
-      p: "Barcode é um evento criado para que profissionais da área de TI possam ficar longe do teclado por um tempo, beber cerveja, assistir palestras curtas e, claro, trocar aquele bom papo nerd."
+      p: "BarCode é um evento criado para que profissionais da área de TI possam ficar longe do teclado por um tempo, beber cerveja, assistir palestras curtas e, claro, trocar aquele bom papo nerd."
     -
       p: "Quer falar sobre Android, iOS, Ruby, Python, Javascript, Node, Go, C#, PHP, Java, Scala, Scrum, Design etc? Venha para o evento, pegue uma cerveja (ou café, água...) e mãos na massa!"
 
 # Call for papers section
 c4p_section:
    title: "Call for papers"
-   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-   c4p_url: "http://call4paperz.com"
-   c4p_caption: "Submit"
-   c4p_rules_url: "http://call4paperz.com"
-   c4p_rules_caption: "Read the rules."
+   text: "Quer palestrar?"
+   c4p_url: "https://goo.gl/QuHXj7"
+   c4p_caption: "Faça uma proposta"
+   c4p_rules_url: ""
+   c4p_rules_caption: ""
 
 # Contact section
 contact_section:

@@ -1,12 +1,15 @@
 {% if site.sections.c4p %}
-
-  <!-- CALL FOR PAPERS -->
-  <section class="c4p" id="c4p">
-    <h2 class="section-title">{{site.c4p_section.title}}</h2>
-    <p>{{site.c4p_section.text}}</p>
-    <p><a href="{{site.c4p_section.c4p_url}}">{{site.c4p_section.c4p_caption}}</a></p>
-    <p><a href="{{site.c4p_section.c4p_rules_url}}">{{site.c4p_section.c4p_rules_caption}}</a></p>
-  </section>
-  <!-- / ABOUT -->
+<!-- ABOUT -->
+<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="c4p">
+    <div class="mdl-card mdl-cell mdl-cell--12-col">
+        <div class="mdl-card__supporting-text">
+            <h4>{{site.c4p_section.title}}</h4>
+            <p itemprop="description">{{site.c4p_section.text}}</p>
+            <p itemprop="description"><a href="{{site.c4p_section.c4p_url}}">{{site.c4p_section.c4p_caption}}</a></p>
+            <p itemprop="description"><a href="{{site.c4p_section.c4p_rules_url}}">{{site.c4p_section.c4p_rules_caption}}</a></p>
+        </div>
+    </div>
+</section>
+<!-- / ABOUT -->
 
 {% endif %}
