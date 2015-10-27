@@ -56,20 +56,23 @@ schedule:
     presentation:
       title: "Ruby on Rails e REST API"
       description: ""
-      time: "18h00"
+      time: "19h00"
   -
     name: "Italo Santos"
     photo: "img/italo-santos.jpg"
-    bio: ""
-    company: ""
+    bio: "Desenvolvedor Front End por acaso, encontrou sua paixão em AngularJS e JavaScript. Faz parte da Infonet há mais de 5 anos e hoje atua na Inventione, empresa parceira de projetos de inovação. Também é responsável por guiar a equipe de desenvolvedores da Softeam."
+    company: "Infonet"
     socials:
       -
         service: "facebook"
         handler: "italosnt"
+      -
+        service: "linkedin"
+        handler: "italosnt"
     presentation:
-      title: "AngularJS"
+      title: "Greetings, AngularJS"
       description: ""
-      time: "19h30"
+      time: "20h30"
 
 # List of Sponsors
 sponsors:
