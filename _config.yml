@@ -44,8 +44,8 @@ schedule:
   -
     name: "Diego Melo"
     photo: "img/diego-melo.jpg"
-    bio: "Entusiasta em Linux desde os 14 anos, desenvolvedor a mais de 3 anos, gamer casual, UI e UX entusiasta e sempre buscando novas maneiras de melhorar e otimizar a forma de desenvolvimento dos projetos."
-    company: "Unit - Desenvolvedor"
+    bio: "Entusiasta em Linux desde os 14 anos, desenvolvedor há mais de 3 anos, gamer casual, UI e UX entusiasta e sempre buscando novas maneiras de melhorar e otimizar a forma de desenvolvimento dos projetos."
+    company: "Unit - Developer"
     socials:
       -
         service: "github"
@@ -61,7 +61,7 @@ schedule:
     name: "Italo Santos"
     photo: "img/italo-santos.jpg"
     bio: "Desenvolvedor Front End por acaso, encontrou sua paixão em AngularJS e JavaScript. Faz parte da Infonet há mais de 5 anos e hoje atua na Inventione, empresa parceira de projetos de inovação. Também é responsável por guiar a equipe de desenvolvedores da Softeam."
-    company: "Infonet"
+    company: "Infonet | Inventione | Softeam - Front End Developer"
     socials:
       -
         service: "facebook"
