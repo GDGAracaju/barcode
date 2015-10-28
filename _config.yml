@@ -7,7 +7,7 @@ permalink: /:title.html
 conf:
   name: "Barcode"
   description: "Barcode é um evento criado para que profissionais da área de TI possam ficar longe do teclado por um tempo, beber cerveja, assistir palestras curtas e, claro, trocar aquele bom papo nerd."
-  date: "13 de novembro"
+  date: "13 de novembro de 2015"
   price: "Free"
   address: "Rua Américo Curvelo, 585 - Grageru"
   venue: "Garage 585"
@@ -22,7 +22,7 @@ site:
     cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
     facebook: "http://barcode.gdgaracaju.com.br/img/facebook-thumb.jpg"
 
-subscribe_text: "Participe"
+subscribe_text: "Participe do evento"
 subscribe_url: "https://goo.gl/9nwgho"
 
 # Active sections on the website
@@ -102,7 +102,7 @@ c4p_section:
    title: "Call for papers"
    text: "Quer palestrar?"
    c4p_url: "https://goo.gl/QuHXj7"
-   c4p_caption: "Faça uma proposta"
+   c4p_caption: "Faça uma proposta! Vamos adorar ter você conosco!"
    c4p_rules_url: ""
    c4p_rules_caption: ""
 
