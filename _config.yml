@@ -22,15 +22,15 @@ site:
     cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
     facebook: "http://barcode.gdgaracaju.com.br/img/facebook-thumb.jpg"
 
-subscribe_text: "Participe do evento"
-subscribe_url: "https://goo.gl/9nwgho"
+subscribe_text: "Acesse a página no Facebook"
+subscribe_url: "https://www.facebook.com/barcode.aju/"
 
 # Active sections on the website
 sections:
   about: true
-  c4p: true
-  location: true
-  speakers: true
+  c4p: false
+  location: false
+  speakers: false
   schedule: false
   sponsors: false
   partners: false
