@@ -7,7 +7,7 @@ permalink: /:title.html
 conf:
   name: "Barcode"
   description: "Barcode é um evento criado para que profissionais da área de TI possam ficar longe do teclado por um tempo, beber cerveja, assistir palestras curtas e, claro, trocar aquele bom papo nerd."
-  date: "13 de novembro de 2015"
+  date: "12 de fevereiro de 2016"
   price: "Free"
   address: "Rua Américo Curvelo, 585 - Grageru"
   venue: "Garage 585"
@@ -22,15 +22,15 @@ site:
     cover: "http://f.cl.ly/items/2X28422q1e3w0C2U1P3H/866591_24254643.jpg"
     facebook: "http://barcode.gdgaracaju.com.br/img/facebook-thumb.jpg"
 
-subscribe_text: "Acesse a página no Facebook"
-subscribe_url: "https://www.facebook.com/barcode.aju/"
+subscribe_text: "Inscreva-se"
+subscribe_url: "http://www.meetup.com/pt-BR/GDG-Aracaju/events/228084119/"
 
 # Active sections on the website
 sections:
   about: true
   c4p: false
-  location: false
-  speakers: false
+  location: true
+  speakers: true
   schedule: false
   sponsors: false
   partners: false
@@ -40,37 +40,31 @@ sections:
 schedule:
   -
     name: "Chegada sóbria :)"
-    time: "18h00"
+    time: "19h00"
   -
-    name: "Diego Melo"
-    photo: "img/diego-melo.jpg"
-    bio: "Entusiasta em Linux desde os 14 anos, desenvolvedor há mais de 3 anos, gamer casual, UI e UX entusiasta e sempre buscando novas maneiras de melhorar e otimizar a forma de desenvolvimento dos projetos."
-    company: "Unit - Developer"
+    name: "Sergio Lara"
+    photo: "img/sergio-lara.jpg"
+    bio: "Programador com 22 anos de experiência no desenvolvimento de aplicações para uma variedade de pequenas e médias empresas, tanto em plataforma desktop quanto web. Desenvolve em PHP desde 2009. No currículo linguagens como Java, Delphi e JavaScript, e alguns bancos de dados como MySQL, Firebird, Postgres e Oracle."
+    company: "Co-Founder na Visãocerta"
     socials:
       -
-        service: "github"
-        handler: "diegomelo182"
-      -
-        service: "facebook"
-        handler: "diego.melo.370"
+        service: "linkedin"
+        handler: "in/sergio-lara-47240b71"
     presentation:
-      title: "Ruby on Rails e REST API"
+      title: "PHP Frameworks: CodeIgniter"
       description: ""
       time: "19h00"
   -
-    name: "Italo Santos"
-    photo: "img/italo-santos.jpg"
-    bio: "Desenvolvedor Front End por acaso, encontrou sua paixão em AngularJS e JavaScript. Faz parte da Infonet há mais de 5 anos e hoje atua na Inventione, empresa parceira de projetos de inovação. Também é responsável por guiar a equipe de desenvolvedores da Softeam."
-    company: "Infonet | Inventione | Softeam - Front End Developer"
+    name: "Italo Marcel"
+    photo: "img/italo-marcel.jpg"
+    bio: "Um gamer nato e apaixonado por Android, formado em Programação de Sistemas pelo Instituto Federal de Sergipe e graduando em Ciência da Computação pela Universidade Federal de Sergipe. Programa desde os 15 anos de idade, e já desenvolveu diversos aplicativos durante os mais de 4 anos como engenheiro Android. Inovar faz parte de seu DNA."
+    company: "Web & Mobile Developer na Getinfo"
     socials:
       -
         service: "facebook"
-        handler: "italosnt"
-      -
-        service: "linkedin"
-        handler: "italosnt"
+        handler: "italo.marcel"
     presentation:
-      title: "Greetings, AngularJS"
+      title: "Como aumentar a sua produtividade no Android Studio"
       description: ""
       time: "20h30"
 
@@ -78,8 +72,12 @@ schedule:
 sponsors:
   -
     name: "GDG Aracaju"
-    logo: "http://f.cl.ly/items/1U3p0Z0e2w0I1i3z1X22/Image%202012.09.25%203:00:58%20PM.png"
-    url: "http://eventick.com.br"
+    logo: "http://io.gdgaracaju.com.br/img/partners/aracaju.png"
+    url: "http://site.gdgaracaju.com.br/"
+  -
+    name: "Popcode"
+    logo: "http://io.gdgaracaju.com.br/img/partners/popcode.jpg"
+    url: "http://popcode.com.br/"
 
 # List of Partners
 partners:
@@ -151,5 +149,5 @@ speakers_section:
 
 # Sponsors section
 sponsors_section:
-   title: "Patrocinadores"
+   title: "Fazem acontecer"
    show_your_logo_here: true
